@@ -1,1 +1,104 @@
-Hi..
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #dd{
+  opacity:0;
+}
+#dd:hover{
+  opacity:1;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+#a{
+  font-size:15px;
+  border-left:10px dotted green;
+  border-top:10px dashed blue;
+  border-right:10px solid yellow;
+  border-bottom:10px outset blueviolet;
+  border-radius:100px;
+  padding:3px;
+  margin:10px;
+}
+
+#circle {
+  position: absolute;;
+  width:50px;
+  height:50px;
+  border-radius:50px;
+  background-color:#ff7473;
+  top:0;
+  left:50vw;
+}
+
+#circle:hover {
+  transition: transform 3s;
+  transform: scale(100,100)
+}
+
+#con{
+  width:1000px;
+  height:500px;
+  background-color: beige;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%} 
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%} 
+}
+@keyframes AnimationName {
+0%{
+  background-position:0% 50%
+}
+50%{
+  background-position:100% 50%
+}
+100%{
+  background-position:0% 50%
+}
+}
+
+#gra{
+  background: linear-gradient(to right, #fbcac9, #8ca6ce);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+#gra:hover{
+  background: linear-gradient(to right, #fbcac9, #8ca6ce);
+  background-size:200% 200%;
+  color:#fff;
+  -webkit-text-fill-color: transparent;
+  animation:AnimationName 5s ease infinite;
+}
+#gra2{
+  font-family:"Nanum Pen Script", sans-serif;
+}
+#gra2:hover{
+  color: #fff;
+  -webkit-text-fill-color: #fff;
+  
+}
+ul li span{
+  font-size:40px;
+}
+
+body{
+  background: linear-gradient(to right, #f2709c, #ff9472);
+  background-size:200% 200%;
+  animation:AnimationName 7s ease infinite;
+}
+  </style>
+  <script src="script.js"> </script>
+</head>
+<body>
+  <ul>
+    <li><span id="gra"><a href="https://www.google.com"><span id="gra2">구루구루</span></a></span></li>
+    <li><span id="gra"><a href="https://www.naver.com"><span id="gra2">네이버</span></a></span></li>
+    <li><span id="gra"><a href="https://github.com"><span id="gra2">깃헙</span></a></span></li>
+  </ul>
+</body>
+</html>

@@ -5,7 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    #dd{
+ ::-webkit-scrollbar { display: none; }
+
+.container {
+  width:100vw;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+}
+
+#dd{
   opacity:0;
 }
 #dd:hover{
@@ -15,7 +24,7 @@
 #a{
   font-size:15px;
   border-left:10px dotted green;
-  border-top:10px dashed blue;
+  border-top:10px solid blue;
   border-right:10px solid yellow;
   border-bottom:10px outset blueviolet;
   border-radius:100px;
@@ -88,9 +97,9 @@ ul li span{
 ul{
   position: absolute;
   text-align:center;
-  left:45%;
   list-style:none;
 }
+
 body{
   background: linear-gradient(to right, #f2709c, #ff9472);
   background-size:200% 200%;

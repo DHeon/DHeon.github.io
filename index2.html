@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>우ㅏ옹</title>
+  <style>
+    body{
+      background-image: url("https://cdn1.epicgames.com/ue/product/Screenshot/1-1920x1080-2936aef8eebff524bf98253597f83dad.png?resize=1&w=1600");
+      margin:0;
+    }
+    
+    #container:hover {
+      transform:rotateY(180deg);
+
+    }
+    #container {
+      width: 100vw;
+      height: 100vh;
+      text-align:center;
+      line-height: 100vh;
+      transition:all 1.5s;
+      -webkit-transition:all 1.5s;
+      
+    }
+    #card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+    }
+
+
+    .front{
+      backface-visibility:hidden;
+      -webkit-backface-visibility:hidden;
+      background-color:white;
+      display:inline-block;
+      font-size:50px;
+      color:black;
+      mix-blend-mode:screen;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="card">
+  <div id="container">
+    <div class="front">Hello</div>
+  </div>
+  </div>
+</body>
+</html>

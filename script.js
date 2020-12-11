@@ -11,7 +11,7 @@ const firstDay = (count) =>
     new Date(today.getFullYear(), today.getMonth() + count, 1);
 const lastDay = (count) =>
     new Date(today.getFullYear(), today.getMonth() + count + 1, 0);
-const weekName = ['일(日)','월(月)','화(火)','수(水)','목(木)','금(金)','토(土)'];
+const weekName = ['일','월','화','수','목','금','토'];
 
 week.innerHTML = weekName
     .map((week) => `<div class="weekname"> ${week} </div>`)

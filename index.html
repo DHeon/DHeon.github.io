@@ -49,6 +49,20 @@
 <div class="content">
   <p>C O L L A P S I B L E</p>
 </div>
+<button type="button" class="collapsible">1</button>
+<div class="content">
+  <p>C O L L A P S I B L E</p>
+</div>
+<button type="button" class="collapsible">2</button>
+<div class="content">
+  <p>C O L L A P S I B L E</p>
+</div>
+  
+
+  <div>
+    <br>
+  </div>
+
   <div class="container2">
 
       <div class="flip-card">
@@ -65,13 +79,21 @@
   </div>
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23EF6C00&amp;ctz=Asia%2FSeoul&amp;src=anI0dHNqZmo5dW9sMzI5MWY3N2dnY3M2b3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D81B60&amp;color=%230B8043&amp;showTitle=0" style="border:solid 1px #777" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
 
+
+<div>
   <div id="calendar">
-    <button type="button" class="prev-btn">이전</button>
-<button type="button" class="next-btn">다음</button>
-    <h2></h2>
-    <div class="week"></div>
-    <div class="days"></div>
+    <div class="prev btn round" onclick="javascript:handlePrevCalendar()">이전</div>
+    <div class="next btn round" onclick="javascript:handleNextCalendar()">다음</div>
+    <h2>2020년 <span class="thisMon">12</span>월</h2>
+    <div class="week"><div class="weekname"> 일(日) </div><div class="weekname"> 월(月) </div><div class="weekname"> 화(火) </div><div class="weekname"> 수(水) </div><div class="weekname"> 목(木) </div><div class="weekname"> 금(金) </div><div class="weekname"> 토(土) </div></div>
+    <div class="days"><div class="daynum empty"></div><div class="daynum empty"></div><div class="daynum"> 1 </div><div class="daynum"> 2 </div><div class="daynum"> 3 </div><div class="daynum"> 4 </div><div class="daynum"> 5 </div><div class="daynum"> 6 </div><div class="daynum"> 7 </div><div class="daynum"> 8 </div><div class="daynum"> 9 </div><div class="daynum"> 10 </div><div class="daynum"> 11 </div><div class="daynum today"> 12 </div><div class="daynum"> 13 </div><div class="daynum"> 14 </div><div class="daynum"> 15 </div><div class="daynum"> 16 </div><div class="daynum"> 17 </div><div class="daynum"> 18 </div><div class="daynum"> 19 </div><div class="daynum"> 20 </div><div class="daynum"> 21 </div><div class="daynum"> 22 </div><div class="daynum"> 23 </div><div class="daynum"> 24 </div><div class="daynum"> 25 </div><div class="daynum"> 26 </div><div class="daynum"> 27 </div><div class="daynum"> 28 </div><div class="daynum"> 29 </div><div class="daynum"> 30 </div><div class="daynum"> 31 </div></div>
+    <div id="go_today" class="btn" onclick="javascript:goto_thisMonth()" style="display: none;">Today&gt;&gt;</div>
+    
+  </div>
+  
+
+
+  <script src="script.js"></script>
 </div>
-<script type="text/javascript" src="index2.js"></script>
 </body>
 </html>

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  
   <script>
     function go(){
       let link = prompt("where do you want to go?");
@@ -28,7 +28,18 @@
 
     
   </script>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+    width: 100%;
+    height: 60%;
+  }
+  </style>
+  
 </head>
 <body>
   <div class="container4">
@@ -37,6 +48,43 @@
   <button type="button" onclick="kor()">Kor</button>
   <button type="button" onclick="eng()">Eng</button>
   </div>
+
+
+  <div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="dd.png" alt="Los Angeles" width="1100" height="500" onclick="location.href=`https://sites.google.com/view/doheon`">
+      <div class="carousel-caption">
+        <h3>My Google Site</h3>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Google_web_search.png" alt="Chicago" width="1100" height="500" onclick="location.href=`https://google.com`">
+      <div class="carousel-caption">
+        <h3 style="color:black">Google</h3>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="aa.png" alt="New York" width="1100" height="500" onclick="location.href=`calendar.html`">
+      <div class="carousel-caption">
+        <h3>Calendar</h3>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
+
   <div class="container">
   <ul>
     <li><span id="gra"><a href="https://www.google.com"><span class="gra2" id="guru">구루구루</span></a></span></li>
@@ -80,21 +128,7 @@
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23EF6C00&amp;ctz=Asia%2FSeoul&amp;src=anI0dHNqZmo5dW9sMzI5MWY3N2dnY3M2b3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D81B60&amp;color=%230B8043&amp;showTitle=0" style="border:solid 1px #777" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
 
 
-<div>
-  <div id="calendar">
-    <div class="prev btn round" onclick="javascript:handlePrevCalendar()">이전</div>
-    <div class="next btn round" onclick="javascript:handleNextCalendar()">다음</div>
-    <div id="go_today" class="btn" onclick="javascript:goto_thisMonth()" style="display: none;">Today&gt;&gt;</div>
-    <h2>2020년 <span class="thisMon">12</span>월</h2>
-    <div class="week"><div class="weekname"> 일 </div><div class="weekname"> 월 </div><div class="weekname"> 화 </div><div class="weekname"> 수 </div><div class="weekname"> 목 </div><div class="weekname"> 금 </div><div class="weekname"> 토 </div></div>
-    <div class="days"><div class="daynum empty"></div><div class="daynum empty"></div><div class="daynum"> 1 </div><div class="daynum"> 2 </div><div class="daynum"> 3 </div><div class="daynum"> 4 </div><div class="daynum"> 5 </div><div class="daynum"> 6 </div><div class="daynum"> 7 </div><div class="daynum"> 8 </div><div class="daynum"> 9 </div><div class="daynum"> 10 </div><div class="daynum"> 11 </div><div class="daynum today"> 12 </div><div class="daynum"> 13 </div><div class="daynum"> 14 </div><div class="daynum"> 15 </div><div class="daynum"> 16 </div><div class="daynum"> 17 </div><div class="daynum"> 18 </div><div class="daynum"> 19 </div><div class="daynum"> 20 </div><div class="daynum"> 21 </div><div class="daynum"> 22 </div><div class="daynum"> 23 </div><div class="daynum"> 24 </div><div class="daynum"> 25 </div><div class="daynum"> 26 </div><div class="daynum"> 27 </div><div class="daynum"> 28 </div><div class="daynum"> 29 </div><div class="daynum"> 30 </div><div class="daynum"> 31 </div></div>
-    
-    
-  </div>
-  
 
-
-  <script src="script.js"></script>
 </div>
 </body>
 </html>

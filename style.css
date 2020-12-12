@@ -310,9 +310,9 @@ td{
 }
 
 #go_today{
-  position: absolute;
-  left:400px;
-  top:60px;
+  height:17px;
+  width:50px;
+  float:right;
 }
 .btn{
   background-color: #ddd;
@@ -325,14 +325,16 @@ td{
   transition: 0.3s;
 }
 .prev{
-  height:5vh;
-  width:6vh;
+  height:25px;
+  width:35px;
   padding:6px;
+  float:left;
 }
 .next{
-  height:5vh;
-  width:6vh;
+  height:25px;
+  width:35px;
   padding:6px;
+  float:right;
 }
 .btn:hover {
   background-color: #3e8e41;

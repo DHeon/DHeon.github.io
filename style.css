@@ -148,6 +148,7 @@ td{
 .container4{
   position:fixed;
   border:3px solid white;
+  z-index:999;
 }
 .flip-card {
   background-color: transparent;

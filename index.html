@@ -84,6 +84,7 @@
   </a>
 </div>
 
+
   <br>
   <div class="container">
   <ul>
@@ -97,13 +98,13 @@
 <div class="content">
   <p>C O L L A P S I B L E</p>
 </div>
-<button type="button" class="collapsible">1</button>
+<button type="button" class="collapsible">Cat</button>
 <div class="content">
-  <p>C O L L A P S I B L E</p>
+  <img src="https://newsimg.hankookilbo.com/cms/articlerelease/2019/04/29/201904291390027161_3.jpg" >
 </div>
-<button type="button" class="collapsible">2</button>
+<button type="button" class="collapsible">Dog</button>
 <div class="content">
-  <p>C O L L A P S I B L E</p>
+  <img src="https://images.mypetlife.co.kr/content/uploads/2019/09/04222847/dog-panting-1024x683.jpg" >
 </div>
   
 
@@ -127,7 +128,22 @@
   </div>
 <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23EF6C00&amp;ctz=Asia%2FSeoul&amp;src=anI0dHNqZmo5dW9sMzI5MWY3N2dnY3M2b3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=a28uc291dGhfa29yZWEjaG9saWRheUBncm91cC52LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23D81B60&amp;color=%230B8043&amp;showTitle=0" style="border:solid 1px #777" width="1000" height="600" frameborder="0" scrolling="no"></iframe>
 
-<script src="script.js"></script>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </div>
 </body>
